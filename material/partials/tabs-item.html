@@ -3,7 +3,7 @@
 -#}
 {% if nav_item.is_homepage or nav_item.url == "index.html" %}
   <li class="md-tabs__item">
-   <!-- {% if not page.ancestors | length and nav | selectattr("url", page.url) %}
+   {% if not page.ancestors | length and nav | selectattr("url", page.url) %}
       <a href="{{ nav_item.url | url }}" class="md-tabs__link md-tabs__link--active">
         {{ nav_item.title }}
       </a>
@@ -11,10 +11,7 @@
       <a href="{{ nav_item.url | url }}" class="md-tabs__link">
         {{ nav_item.title }}
       </a>
-    {% endif %}-->
-    <a href="/eb/guia-de-producao-de-material-didatico/capa/" class="md-tabs__link md-tabs__link--active">
-      Tópico
-    </a>
+    {% endif %}
   </li>
   
 {% elif nav_item.children and nav_item.children | length > 0 %}
@@ -23,7 +20,6 @@
     {% set nav_item = nav_item.children | first %}
     {% include "partials/tabs-item.html" %}
   {% else %}
-  <!--
     <li class="md-tabs__item">
       {% if nav_item.active %}
         <a href="{{ (nav_item.children | first).url | url }}" class="md-tabs__link md-tabs__link--active">
@@ -34,6 +30,6 @@
           {{ title }}
         </a>
       {% endif %}
-    </li>-->
+    </li>
   {% endif %}
 {% endif %}

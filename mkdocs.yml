@@ -121,14 +121,34 @@ markdown_extensions:
 # Page tree
 nav:
   - Home: index.md
-  - Getting started: getting-started.md
   - Sobre:
     - Home: sobre/index.md
   - Limite:
     - Definição: limite/definicao.md
     - Propriedades: limite/propriedades.md
     - Continuidade: limite/continuidade.md
+    - Infinitos: limite/infinitos.md
+    - No infinito: limite/no-infinito.md
+    - Fundamentais: limite/fundamentais.md
     - Licença: limite/creative-commons.md 
+  - Derivada:
+    - Definição: derivada/definicao.md
+    - Propriedades: derivada/propriedades.md
+    - Licença: derivada/creative-commons.md
+  - Aplicações:
+    - Definição: aplicacao/definicao.md
+    - Propriedades: aplicacao/propriedades.md
+    - Licença: aplicacao/creative-commons.md
+  - Integral:
+    - Definição: integral/definicao.md
+    - Propriedades: integral/propriedades.md
+    - Licença: integral/creative-commons.md
+  - Listas:
+    - Limite: listas/limite.md
+    - Derivada: listas/derivada.md
+    - Aplicações: listas/aplicacao.md
+    - Integral: listas/integral.md
+    - Licença: derivada/creative-commons.md
 # Google Analytics
 google_analytics:
   - !!python/object/apply:os.getenv ["GOOGLE_ANALYTICS_KEY"]

@@ -10,6 +10,5 @@ sob termos idênticos.</p>
 
 <br> 
 
-<center> <a href="https://creativecommons.org/licenses/by-nc-sa/4.0/"><img src="../imagens/code.jpg" style="width:223px;height:110px"/></a></center>
 
 

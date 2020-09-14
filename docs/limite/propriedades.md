@@ -1,7 +1,5 @@
 # **Propriedades**
 
-![Legenda](../imagens/capitulo.png)
-
 <style>
 p.combinado:first-letter { 
 	color: #F5843A; 
@@ -155,17 +153,12 @@ p.combinado:first-letter {
 }
 </style>
 
-<div class="card">
-<div class="info">
-  <span class="closebtn" onclick="this.parentElement.style.display='none';">&times;</span> 
-  <strong>Informe:</strong> Videoaula liberada!</a>
-</div>
-</div>
 
 
 
+**Em breve** 
 
-
+<!-- 
 !!! tip "Videoaula 1"
     <p style="text-align: center;">
     <iframe width="720" height="345" src="https://www.youtube.com/embed/kJYLWFwfL80"></iframe>
@@ -175,7 +168,7 @@ p.combinado:first-letter {
     
     **Instalação do TeXstudio**: 
 
-    Acesse texstudio.org ou digite no seu navegador de preferência, ou seja, dá um google em "texstudio", normalmente é o primeiro resultado que aparece na pesquisa. 
+    Acesse texstudio.org ou digite no seu navegador de preferência, ou seja, dá um google em "texstudio", normalmente é o primeiro resultado que aparece na pesquisa. $f(x)$
 
     Ao clicar, você será levado a página de baixar em função do seu sistema operacional. Basta clicar e aguardar o download. 
 
@@ -198,7 +191,6 @@ Que podemos ainda reescrever, ficando
 
 $$ f'(x) = 4x^3 - \cos(x) + \frac{2}{\pi x} $$ 
 
-<!-- 
 ## Fundamento legal - obrigatoriedade
 
 <p style="text-align: justify;">

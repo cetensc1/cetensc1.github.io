@@ -169,3 +169,5 @@ input[type='checkbox'] { display: none; } .wrap-collabsible { margin: 1.2rem 0; 
 
 $$ f'(x_0) =  \displaystyle\lim_{\Delta x\to 0} \displaystyle\frac{f(x_0 +\Delta x) - f(x_0)}{\Delta x} $$ 
 
+Fazendo uma modificação
+

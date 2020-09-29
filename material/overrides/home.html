@@ -5,7 +5,6 @@
 {% block tabs %}
   {{ super() }}
 
-
   
   <style>
     .caixa-nova{
@@ -348,19 +347,19 @@
     }
 
 img {
-  border-radius: 5px 5px 0 0;
+  border-radius: 5px 5px 5px 5px;
   width: 80%;
   height: auto;
 }
 /* Float four columns side by side */
 .column {
-  float: left;
-  width: 25%;
+  float: right;
+  width: 30%;
   padding: 0 10px;
 }
 
 /* Remove extra left and right margins, due to padding */
-.row {margin: 0 -5px;}
+.row {margin: 0 -20px;}
 
 /* Clear floats after the columns */
 .row:after {
@@ -380,12 +379,23 @@ img {
 
 /* Style the counter cards */
 .card {
-  font-size: 25px;
-  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
-  padding: 16px;
+  font-size: 50px;
+  width: 200px;
+  height: 300px;
+  /* box-shadow: 0 8px 14px 0 rgb(49, 106, 145); */
+  box-shadow: 5px 5px 30px 7px rgba(0,0,0,0.25), -5px -5px 30px 7px rgba(0,0,0,0.22);
+  cursor: pointer;
+  transition: 0.4s;
+  padding: 0px;
   text-align: center;
-  background-color:rgb(49, 106, 145);
+  background-color:white;
   border-radius: 5px;
+}
+
+.card:hover {
+  transform: scale(0.9, 0.9);
+  box-shadow: 5px 5px 30px 15px rgba(0,0,0,0.25), 
+    -5px -5px 30px 15px rgba(0,0,0,0.22);
 }
 
     /* Parte inicial */
@@ -411,49 +421,52 @@ img {
     </div>
   </section>
 
-  <!-- # Aqui é o banner de ebooks-->
-  <section class="tx-containo">
-    <div class="md-grid md-typeset"></div>
-      <div class="explore">
-        <h1>Explore</h1>
-       </div>
-      <div class="tx-hero">
-
+    <!-- Seção de ebooks-->
+    <section class="tx-containo">
+      <div class="md-grid md-typeset"></div>
+        <div class="explore">
+          <h1>Explore</h1>
+         </div>
+        <div class="tx-hero">
+       
           <div class="column">
             <div class="card">
-              <h2>Limite</h2>
-            </div>
-          </div>
-        
-          <div class="column">
-            <div class="card">
-              <h2>Derivada</h2>
-            </div>
-          </div>
-          
-          <div class="column">
-            <div class="card">
-              <h2>Aplicações</h2>
-            </div>
-          </div>
-          
-          <div class="column">
-            <div class="card">
-              <h2>Integral</h2>
+            <a href="/limite/definicao/" title="O papel do fiscal na administração pública">
+               <img src="../assets/images/limite.png" alt="" style="width: 100%; height: auto;">  
+            </a>
             </div>
         </div>
+        <div class="column">
+            <div class="card">
+            <a href="/derivada/definicao/" title="{{ page.next_page.title | striptags }}">
+               <img src="../assets/images/derivada.png" alt="" style="width: 100%; height: auto;">  
+            </a>
+            </div>
+        </div>
+        <div class="column">
+            <div class="card">
+            <a href="/aplicacao/definicao/" title="convite-formatura">
+               <img src="../assets/images/aplicacao_derivada.png" alt="" style="width: 100%; height: auto;">  
+            </a>
+            </div>
+        </div>
+  
+        <div class="column">
+          <div class="card">
+          <a href="/integral/definicao/" title="Convite convite-formatura-2">
+             <img src="../assets/images/integral.png" alt="" style="width: 100%; height: auto;">  
+          </a>
+          </div>
       </div>
-  </section>
-
-
+      </div>
+    </section>
 
 <!-- github描述开始 -->
 <section class="caixa-marcas">
   <div class="open-source">
-    <h1>Iniciativa</h1> 
-    <p>Profª <strong>Kátia Silene Porto Rodrigues</strong></p> 
+    <h1>Iniciativa</h1>  
     <p>Monitor <strong>Carlos André Lima de Matos</strong></p> 
-    <img src="assets/images/marca-cetens.png" alt="" width="481" height="93" draggable="false">  
+    <img src="assets/images/marca-cetens.png" alt="" style="width: 60%; height: auto;" draggable="false">  
   </div>
   
   <div class="open-source">
@@ -489,6 +502,35 @@ img {
   <script>
     new window.VLibras.Widget('https://vlibras.gov.br/app');
   </script>
+
+<!--Jquery-->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js" integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>
+<!--Floating WhatsApp css-->
+<link rel="stylesheet" href="https://rawcdn.githack.com/rafaelbotazini/floating-whatsapp/3d18b26d5c7d430a1ab0b664f8ca6b69014aed68/floating-wpp.min.css">
+<!--Floating WhatsApp javascript-->
+<script type="text/javascript" src="https://rawcdn.githack.com/rafaelbotazini/floating-whatsapp/3d18b26d5c7d430a1ab0b664f8ca6b69014aed68/floating-wpp.min.js"></script>
+
+<!--Div where the WhatsApp will be rendered-->  
+<body>
+  <!--Div where the WhatsApp will be rendered-->
+    <div id="WAButton"></div>
+</body>  
+
+<script type="text/javascript">  
+  $(function () {
+          $('#WAButton').floatingWhatsApp({
+              phone: '+5575991940520', //WhatsApp Business phone number
+              headerTitle: 'Converse com André!', //Popup Title
+              popupMessage: 'Olá, como posso ajudá-lo(a)?', //Popup Message
+              showPopup: true, //Enables popup display
+              buttonImage: '<img src="assets/images/whatsapp.svg"/>', //Button Image
+              //headerColor: 'crimson', //Custom header color
+              //backgroundColor: 'crimson', //Custom background button color
+              position: "right" //Position: left | right
+
+          });
+      });
+</script> 
   {% endblock %}
   {% block content %}{% endblock %}
   {% block footer %}{% endblock %}

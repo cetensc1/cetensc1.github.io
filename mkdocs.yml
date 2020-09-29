@@ -123,6 +123,8 @@ nav:
   - Home: index.md
   - Sobre:
     - Home: sobre/index.md
+  - Horários:
+    - Cronograma: horarios/index.md
   - Limite:
     - Definição: limite/definicao.md
     - Propriedades: limite/propriedades.md
@@ -148,7 +150,7 @@ nav:
     - Derivada: listas/derivada.md
     - Aplicações: listas/aplicacao.md
     - Integral: listas/integral.md
-    - Licença: derivada/creative-commons.md
+    - Licença: listas/creative-commons.md
 # Google Analytics
 google_analytics:
   - !!python/object/apply:os.getenv ["GOOGLE_ANALYTICS_KEY"]

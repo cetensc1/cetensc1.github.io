@@ -153,10 +153,141 @@ p.combinado:first-letter {
 }
 </style>
 
+Propriedades do Limite de uma Função
+ 
+ 
++  $\displaystyle\lim_{x\to a} k = k ; ~ k \in \mathbb{R}$ 
+
+$$\displaystyle\lim_{x\to 5} -\pi^{7}= - \pi^{7}$$ 
+
+$\displaystyle\lim_{x\to a} k \cdot f(x)= k\cdot \displaystyle\lim_{x\to a} f(x)$ 
+
+$$\displaystyle\lim_{x\to \frac{\pi}{4}} -\sqrt{7}\cdot \text{cotg}(x) $$ 
+
+$$ = -\sqrt{7}\cdot \displaystyle\lim_{x\to \frac{\pi}{4}} \text{cotg}(x)$$ 
+
++ $\displaystyle\lim_{x\to a} \left[f(x)\pm g(x)\right]=\displaystyle\lim_{x\to a} f(x) \pm \displaystyle\lim_{x\to a} g(x)$
+
+$$\displaystyle\lim_{x\to -1} \left[ 2^{x}+x^{3}\right]$$ 
+   
+$$= \displaystyle\lim_{x\to -1} 2^{x} + \displaystyle\lim_{x\to -1} x^{3} $$ 
+
++  $\displaystyle\lim_{x\to a} \left[f(x)\cdot g(x)\right]= \displaystyle\lim_{x\to a} f(x)\cdot \displaystyle\lim_{x\to a} g(x)$ 
+
+$$\displaystyle\lim_{x\to \frac{\pi}{6}} (x^2+1)\cdot \mbox{arctg}(x)=\displaystyle\lim_{x\to \displaystyle\frac{\pi}{6}} (x^2+1)\cdot \displaystyle\lim_{x\to \frac{\pi}{6}} \mbox{arctg}(x)$$ 
+
++ $\displaystyle\lim_{x\to a} \displaystyle\frac{f(x)}{g(x)} = \displaystyle\frac{\displaystyle\lim_{x\to a}f(x)}{\displaystyle\lim_{x\to a} g(x)}; \displaystyle\lim_{x\to a} g(x) \neq 0$
+
+ 	$$\displaystyle\lim_{x\to 1} \displaystyle\frac{x^3+4x^2+1}{x^2+1} =\displaystyle\frac{ \displaystyle\lim_{x\to 1} x^3+4x^2+1}{\displaystyle\lim_{x\to 1}x^2+1} =3$$ 
+
++ $\displaystyle\lim_{x\to a} \left[f(x)\right]^{n} = \left[\displaystyle\lim_{x\to a} f(x)\right]^{n},~n \in \mathbb{N}^{*}$ 
+
+$$\displaystyle\lim_{x\to 2 } (x^3+1)^{10} = \left[\displaystyle\lim_{x\to 1}x^3+1\right]^{10} $$ 
+
++ $\displaystyle\lim_{x\to a } \sqrt[n]{f(x)} = \displaystyle\sqrt[n]{\displaystyle\lim_{x\to a}f(x)}$ 
+ 	
+$$\displaystyle\lim_{x\to 5} \sqrt[3]{x^2+1} = \sqrt[3]{\displaystyle\lim_{x\to 5}(x^2+1)}$$ 
+ 
+
+## Limite de uma Função Racional Inteira (Polinomial)
+
+
+Seja $f(x)=a_0x^n+a_1x^{n-1}+\cdots + a_n$, então 
+
+$$\displaystyle\lim_{x\to b } f(x)$$ 
+
+$$= \displaystyle\lim_{x\to b} a_0x^n+a_1x^{n-1}+\cdots + a_n$$ 
+
+$$= ab^n+a_1b^{n-1}+\cdots+a_n = f(b)$$
+
+## Limites básicos 
+
+## Limites Indeterminados 
+
+Temos que  
+
+1. $\displaystyle\lim_{x\to a} \displaystyle\frac{f(x)}{g(x)}$
+
+Aplicando a propriedade, resulta em: 
+
+$$ \displaystyle\frac{\displaystyle\lim_{x\to a}f(x)}{\displaystyle\lim_{x\to a}g(x)}$$
+
+Quando fizermos $x \to a$ resultar em $f(x) \to 0$, $g(x) \to 0$; $f(x) \to \infty$ e $g(x) \to \infty$, 
+resultaria em um quociente dos tipos: 
+
+$$ \displaystyle\frac{``0"}{0}$$ 
+
+e 
+
+$$ \displaystyle\frac{``\infty"}{\infty}$$
+
+Que são expressões onde não é possível determinarmos um valor para elas, logo são ditas expressões indeterminadas. Muitos limites após fazermos $x\to a$ podem resultar em uma dessas expressões, para estes limites, respeitando especificidades, teremos que utilizar de procedimentos algébricos e manipulações matemáticas adequadas para "**Retirar**" a indeterminação, para assim, calcularmos o limite. 
+
+O mesmo acontece, com expressões do tipo 
+
+$$`` \infty - \infty "$$ 
+
+
+### Exemplo 1 
+
+**Calcule $\displaystyle\lim_{x\to 1} \left[\displaystyle\frac{1}{1-x}-\dfrac{3}{1-x^3}\right]$.**
+
+!!! abstract "Solução"
+
+    Fazendo $x\to 1$, temos 
+
+    $$\displaystyle\lim_{x\to 1} \left[\displaystyle\frac{1}{1-x}-\displaystyle\frac{3}{1-x^3}\right]
+    
+    $$ =\left[\displaystyle\frac{1}{1-1}-\displaystyle\frac{3}{1-(1)^3}\right]$$
+    
+    $$ = \left[\displaystyle\frac{1}{0}-\displaystyle\frac{3}{0}\right] $$ 
+    
+    $$ = \infty-\infty \rightarrow \mbox{Indeterminação} $$ 
+
+    Resolvendo essa diferença de frações, obtemos 
+
+    $$=\displaystyle\lim_{x\to 1} \left[\displaystyle\frac{1-x^3-3(1-x)}{(1-x)(1-x^3)}\right]$$
+
+    $$=\displaystyle\lim_{x\to 1} \left[\displaystyle\frac{-x^3+3x-2}{(1-x)(1-x^3)}\right]$$  
+
+    Precisamos retirar a indeterminação, para isso vamos fatorar os polinômios do numerador e denominador. 
+
+    Para o numerador, temos $x^3+3x-2$, como temos uma das raízes, fatoramos usando o dispositivo de Briot Ruffini, 
+
+    $$\begin{array}{c|cccc}
+    1 & -1 & 0 & 3 & -2 \\ \hline 
+    & -1 & -1 & 2 & 0 
+    \end{array}$$ 
+
+    Assim, temos 
+
+    $$ =\displaystyle\lim_{x\to 1} \displaystyle\frac{(x-1)(-x^2-x+2)}{-(x-1)(1-x^3)}$$ 
+
+    $$ =\displaystyle\lim_{x\to 1} \displaystyle\frac{-x^2-x+2}{-(1-x^3)}$$ 
+
+    Fazendo novamente $x\to 1$, temos 
+
+    $$ =\displaystyle\lim_{x\to 1} \displaystyle\frac{-x^2-x+2}{-(1-x^3)}$$ 
+    
+    $$ =\displaystyle\frac{0}{0} \rightarrow \mbox{Indeterminação}$$ 
+
+    Fatorando novamente usando Ruffini, 
+
+    $$ \begin{array}{c|ccc}
+    1 & -1 & -1 & 2\\ \hline 
+    & -1 & -2 & 0 
+    \end{array}$$ 
+
+
+    Assim, 
+
+    $$=\displaystyle\lim_{x\to 1} \displaystyle\frac{ (x-1)(-x-2)}{(x-1)(x^2+x+1)}$$ 
+
+    $$=\displaystyle\lim_{x\to 1} \displaystyle\frac{-x-2}{x^2+x+1}= \displaystyle\frac{-3}{3}=-1$$
 
 
 
-**Em breve** 
+
 
 <!-- 
 !!! tip "Videoaula 1"

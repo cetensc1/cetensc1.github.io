@@ -166,13 +166,14 @@ input[type='checkbox'] { display: none; } .wrap-collabsible { margin: 1.2rem 0; 
 
 
 
-
+<!-- 
 <div class="card">
 <div class="info">
   <span class="closebtn" onclick="this.parentElement.style.display='none';">&times;</span> 
   <strong>Informe:</strong> Modelo de informe</a>
 </div>
 </div>
+-->
 
 ## Limite de uma Função 
 
@@ -193,11 +194,93 @@ $$ \displaystyle\lim_{x\to a} f(x) = L $$
     $$ | x-2| <\delta \Rightarrow |(3x+1)-7| < \epsilon $$ 
 
     Desenvolvendo, 
+
+    Multiplicando em ambos os membros por 3 unidades, resulta em: 
   
     $$ | x - 2 | < \delta \Rightarrow 3\cdot |x-2| < 3\delta $$ 
 
+    Como 3 unidades é positivo, podemos escrever |3|, resulta em: 
 
-### Exercício Resolvido 
+    $$ \Leftrightarrow |3|\cdot |x-2| < 3\delta $$ 
+
+    Usando propriedades, o produto de módulos e módulo do produto, resulta em: 
+
+    $$ \Leftrightarrow |3\cdot (x-2)| < 3\delta $$ 
+
+    Desenvolvendo o produto, resulta em: 
+
+    $$ \Leftrightarrow |3x-6| < 3\delta $$ 
+
+    Veja que podemos reescrever o número -6 como sendo -7+1, este é um artifício para podermos chegarmos na expressão, resulta em: 
+
+    $$ \Leftrightarrow |3x+(1-7)| < 3\delta $$ 
+
+    Comparando com o enunciado da prova, resulta em: 
+
+    $$ \Leftrightarrow |3x+1-7| < 3\delta $$
+
+    Reeorganizando, resulta em: 
+
+    $$ \Leftrightarrow |(3x+1)-7| < 3\delta $$ 
+
+    Como, $|(3x+1)-7| < \epsilon$ e encontramos que $|(3x+1)-7| < 3\delta$, temos que os lados esquerdos das duas expressões são iguais, como temos uma desiguldade, implica que o lado direito das duas expressões também são iguais, logo 
+
+    $$ 3\delta = \epsilon$$ 
+
+    $$ \Leftrightarrow \delta = \displaystyle\frac{\epsilon}{3}$$
+
+    Portanto, para $\displaystyle\lim_{x\to 2} 3x+1=7$ bsta tomarmos um $\delta = \displaystyle\frac{\epsilon}{3}$.
+
+### Exemplo 2 
+
+
+**Mostre que $\displaystyle\lim_{x\to 3} x^2=9$.**
+
+
+!!! abstract "Solução"
+
+    Temos que 
+	
+	  $$ \\displaystyle\lim_{x\to 3} x^2=9 \Leftrightarrow $$ 
+    
+    $$ \forall \varepsilon >0, \exists ~ \delta >0 ~| $$
+    
+    $$ ~ 0<|x-3|<\delta \Rightarrow |x^2-9|< \varepsilon$$ 
+	
+	  Desenvolvendo, 
+	
+	  $$|x^2-9|<\varepsilon $$ 
+    
+    $$\Leftrightarrow |(x-3)(x+3)|< \varepsilon $$ 
+	
+	  $$\Leftrightarrow |x-3||x+3| < \varepsilon $$ 
+
+    Supondo que $\delta \leqslant 1$
+	
+	  $$ |x-3|\leqslant 1 $$ 
+    
+    $$\Leftrightarrow -1\leqslant x-3\leqslant 1$$ 
+
+	  Somando $6$ unidades em ambos os membros, 
+	
+	  $$ -1+6 \leqslant x-3+6 \leqslant 1+6 $$ 
+	
+	  $$ 5 \leqslant x+3\leqslant 7 $$ 
+	
+	  Logo, 
+	
+	  $$ |x+3|< 7 $$ 
+	
+	  Assim, $|x^2-9|=|x-3||x+3| < \delta \cdot 7 = \varepsilon$
+	
+	  Resultando em 
+	
+	  $$ \delta =\frac{\epsilon}{7} $$ 
+	
+	  Portanto, tome $\delta = \mbox{min}\left(1,\dfrac{\varepsilon}{7}\right)$.
+
+
+### Exercício em vídeo
 
 **Mostre pela definição de limite que $\displaystyle\lim_{x\to 1} \displaystyle\frac{1}{(1-x)^2} = + \infty$**.
 <div class="wrap-collabsible"> <input id="collapsible" class="toggle" type="checkbox"> <label for="collapsible" class="lbl-toggle">Solução</label>
@@ -209,10 +292,6 @@ $$ \displaystyle\lim_{x\to a} f(x) = L $$
 </div>
 </div>
 </div>
-
-
-
-
 
 
 <!-- 

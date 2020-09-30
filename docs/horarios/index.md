@@ -24,19 +24,19 @@ Legenda:
 
 ## Distribuição de horários por semana 
 
-| Horário    | Segunda              | Terça                | Quarta               | Quinta            | Sexta                |
-| :--------- | :--------------------| :--------------------| :--------------------| :-----------------| :--------------------|
-| 08h às 09h | Mon. Rodolfo         |  Mon. Rodolfo        | Mon. Rodolfo         | Mon. Rodolfo      | Mon. Carlos André                    |
-| 09h às 10h |                      |  Mon. Rodolfo        |                      | Mon. Rodolfo      | Mon. Carlos André                     |
-| 10h às 11h |  Mon. Carlos André   |  Mon. Rodolfo        |                      | Mon. Rodolfo      | Mon. Carlos I-WA                    |
-| 11h às 12h |  Mon. Carlos André   |  Mon. Rodolfo        |                      | Mon. Rodolfo      | Mon. Carlos I-WA                     |
-| 12h às 13h |  Almoço              |  Almoço              |   Almoço             | Almoço            |  Almoço                    |
-| 13h às 14h |                      |  Mon. Rodolfo        |                      | Mon. Rodolfo |                      |
-| 14h às 15h |                      |                      |                      |                      |                      |
-| 15h às 16h |                      |                      |                      |                      |                      |
-| 16h às 17h |                      |                      |                      |                      |                      |
-| 17h às 18h |                      |                      |                      |                      |                      |
-| 18h às 19h |                      |                      |                      |                      |  Mon. Carlos I-WA                    |
-| 19h às 20h |                      |                      | Mon. Carlos I-WA     |                      | Mon. Carlos I-WA                     |
-| 20h às 21h |                      |                      | Mon. Carlos I-WA     |                      |                      |
+| Horário    | Segunda              | Terça                | Quarta          | Quinta            | Sexta                |
+| :--------- | :--------------------| :-------------------:| :--------------:| :-----------------| :--------------------|
+| 08h às 09h | Mon. Rodolfo         |  Mon. Rodolfo        | Mon. Rodolfo    | Mon. Rodolfo      | Mon. Carlos André    |
+| 09h às 10h |                      |  Mon. Rodolfo        |                 | Mon. Rodolfo      | Mon. Carlos André    |
+| 10h às 11h |  Mon. Carlos André   |  Mon. Rodolfo        |                 | Mon. Rodolfo      | Mon. Carlos I-WA     |
+| 11h às 12h |  Mon. Carlos André   |  Mon. Rodolfo        |                 | Mon. Rodolfo      | Mon. Carlos I-WA     |
+| 12h às 13h |  Almoço              |  Almoço              |   Almoço        | Almoço            |  Almoço              |
+| 13h às 14h |                      |  Mon. Rodolfo        |                 | Mon. Rodolfo      |                      |
+| 14h às 15h |                      |  **Turma 1**         |  **Turma 2**    | **Turma 1**       | **Turma 2**          |
+| 15h às 16h |                      |  **Turma 1**         |  **Turma 2**    | **Turma 1**       | **Turma 2**          |
+| 16h às 17h |                      |  **Turma 1**         |  **Turma 2**    | **Turma 1**       | **Turma 2**          |
+| 17h às 18h |                      |                      |                 |                   |                      |
+| 18h às 19h |                      |                      |                 |                   |  Mon. Carlos I-WA    |
+| 19h às 20h |                      |                      | Mon. Carlos I-WA |                  | Mon. Carlos I-WA     |
+| 20h às 21h |                      |                      | Mon. Carlos I-WA |                  |                      |
 

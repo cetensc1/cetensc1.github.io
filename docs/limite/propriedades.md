@@ -236,7 +236,7 @@ $$`` \infty - \infty "$$
 
     Fazendo $x\to 1$, temos 
 
-    $$\displaystyle\lim_{x\to 1} \left[\displaystyle\frac{1}{1-x}-\displaystyle\frac{3}{1-x^3}\right]
+    $$\displaystyle\lim_{x\to 1} \left[\displaystyle\frac{1}{1-x}-\displaystyle\frac{3}{1-x^3}\right]$$
     
     $$ =\left[\displaystyle\frac{1}{1-1}-\displaystyle\frac{3}{1-(1)^3}\right]$$
     

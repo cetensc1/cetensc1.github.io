@@ -80,8 +80,14 @@ extra:
 # Extensions
 # Equations
 extra_javascript:
+  - javascripts/config.js
   - 'https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.0/MathJax.js?config=TeX-MML-AM_CHTML'
+  - https://polyfill.io/v3/polyfill.min.js?features=es6
+  - https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js
 markdown_extensions:
+  - pymdownx.arithmatex:
+      generic: true
+  - mdx_math
   - markdown.extensions.admonition
   - markdown.extensions.attr_list
   - markdown.extensions.codehilite:
@@ -128,9 +134,11 @@ nav:
   - Limite:
     - Definição: limite/definicao.md
     - Propriedades: limite/propriedades.md
-    - Continuidade: limite/continuidade.md
+    - Indeterminados: limite/indeterminados.md
+    - Laterais: limite/laterais.md
     - Infinitos: limite/infinitos.md
     - No infinito: limite/no-infinito.md
+    - Continuidade: limite/continuidade.md
     - Fundamentais: limite/fundamentais.md
     - Licença: limite/creative-commons.md 
   - Derivada:

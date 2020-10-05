@@ -1,9 +1,25 @@
 window.MathJax = {
     tex2jax: {
       inlineMath: [ ["\\(","\\)"] ],
-      displayMath: [ ["\\[","\\]"] ]
+      displayMath: [ ["\\[","\\]"] ],
+      processEscapes: true,
+      processEnvironments: true
     },
     TeX: {
+      Macros: {
+        Alpha: "\\mbox{A}",
+        Beta: "\\mbox{B}",
+        dlim:"\\displaystyle\\lim",
+        tg:"\\text{tg}",
+        Epsilon: "\\mbox{E}",
+        N: "\\mathbb{N}",
+        R: "\\mathbb{R}",
+        Q: "\\mathbb{Q}",
+        Z: "\\mathbb{Z}",
+        C: "\\mathbb{C}",
+        H: "\\mathbb{H}",
+        P: "\\mathbb{P}",
+      },
       TagSide: "right",
       TagIndent: ".8em",
       MultLineWidth: "85%",
@@ -11,10 +27,11 @@ window.MathJax = {
         autoNumber: "AMS",
       },
       unicode: {
-        fonts: "STIXGeneral,'Arial Unicode MS'"
+        fonts: "STIXGeneral,'Helvetica Unicode MS'"
       }
     },
-    displayAlign: "left",
+    displayAlign: "center",
     showProcessingMessages: false,
     messageStyle: "none"
   };
+

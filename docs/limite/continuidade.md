@@ -174,7 +174,7 @@ Para a definição de **função contínua à esquerda** ou à **direita**, usam
 $$f(x)= \left\{\begin{array}{cccc}
 \displaystyle\frac{x-2}{(x+1)(x-2)}, & & x\neq 2  &\\
 -4, & & x = 2&
-\end{array}\right.$
+\end{array}\right.$$
 
 Na figura abaixo, temos um esboço do gráfico de $f$. 
 
@@ -212,9 +212,20 @@ Portanto, concluímos que $f$ é descontínua em $x=2$.
 
 ### Exemplo 2 
 
+$$ \dlim_{x\to a} f(x)$$ 
+
+
+
+$$
+\begin{equation}\label{nova} 
+s_{na1} = d_{a1} \left ( \dfrac{\dfrac{\pi}{2} + 2x_1\tg{\alpha}}{z_1} + \inv{\alpha_t} - \inv{\alpha_{a1}} \right )\cos{\beta_{a1}}
+\end{equation}
+$$
+
+TEmos a  seguinte $\ref{nova}$
 ### Exercícios 
 
-1. Encontre os pontos de continuidade da função $\displaystyle\frac{x^3-27}{x^2-3x+2}$. 
+1. Encontre os pontos de continuidade da função $f(x)=\displaystyle\frac{x^3-27}{x^2-3x+2}$. 
 
 
 

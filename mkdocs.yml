@@ -135,6 +135,19 @@ nav:
     - Home: sobre/index.md
   - Horários:
     - Cronograma: horarios/index.md
+  - Pré-cálculo:
+    - Conjuntos: pre-calculo/conjuntos.md
+    - Conjuntos Numéricos: pre-calculo/conjuntos-numericos.md
+    - Divisibilidade: pre-calculo/divisibilidade.md
+    - Operações Numéricas: pre-calculo/operacoes-numericas.md
+    - Potenciação: pre-calculo/potenciacao.md
+    - Expressões Algébricas: pre-calculo/expressoes-algebricas.md
+    - Equações: pre-calculo/equacoes.md
+    - Inequações: pre-calculo/inequacoes.md
+    - Funções: pre-calculo/funcoes.md
+    - Trigonometria: pre-calculo/trigonometria.md
+    - Funções Exponenciais: pre-calculo/funcoes-exponenciais.md
+    - Funções Logarítmicas: pre-calculo/funcoes-logaritmicas.md
   - Limite:
     - Definição: limite/definicao.md
     - Propriedades: limite/propriedades.md

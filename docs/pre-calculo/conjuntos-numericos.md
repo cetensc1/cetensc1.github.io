@@ -1,5 +1,5 @@
 
-# **Infinitos**
+# **Conjuntos Numéricos**
 
 :material-cursor-default-click-outline: Clique no botão abaixo para alternar visualização:
 
@@ -164,26 +164,48 @@ p.combinado:first-letter {
   padding: 4px 12px;
 }
 
-
 .atento {
   background-color: #ffffcc;
   border-left: 6px solid #ffeb3b;
   margin-bottom: 15px;
   padding: 4px 12px;
 }
+
+input[type='checkbox'] { display: none; } .wrap-collabsible { margin: 1.2rem 0; } .lbl-toggle { display: block; font-weight: bold; font-family: monospace; font-size: 1.2rem; text-transform: uppercase; text-align: center; padding: 1rem; color: #DDD; background: #0069ff; cursor: pointer; border-radius: 7px; transition: all 0.25s ease-out; } .lbl-toggle:hover { color: #FFF; } .lbl-toggle::before { content: ' '; display: inline-block; border-top: 5px solid transparent; border-bottom: 5px solid transparent; border-left: 5px solid currentColor; vertical-align: middle; margin-right: .7rem; transform: translateY(-2px); transition: transform .2s ease-out; } .toggle:checked+.lbl-toggle::before { transform: rotate(90deg) translateX(-3px); } .collapsible-content { max-height: 0px; overflow: hidden; transition: max-height .25s ease-in-out; } .toggle:checked + .lbl-toggle + .collapsible-content { max-height: 350px; } .toggle:checked+.lbl-toggle { border-bottom-right-radius: 0; border-bottom-left-radius: 0; } .collapsible-content .content-inner { background: rgba(0, 105, 255, .2); border-bottom: 1px solid rgba(0, 105, 255, .45); border-bottom-left-radius: 7px; border-bottom-right-radius: 7px; padding: .5rem 1rem; } .collapsible-content p { margin-bottom: 0; }
 </style>
 
-**Em breve** 
 
-<!-- 
-## Fundamento legal - obrigatoriedade
 
-<p style="text-align: justify;">
-A determinação legal decorre do artigo 67 da Lei 8.666/93. O Artigo 58, inciso III da citada Lei
-assegura à Administração a prerrogativa de fiscalizar os contratos.
+## Conjunto dos Números Naturais 
 
-</p>
--->
+Os registros históricos de números encontrados denotam que os símbolos eram utilizados para registar a quantidade de animais. 
+
+O Conjunto dos números naturais é composto por: 
+
+$$ \N = \{0, 1, 2, 3, 4, 5, ...\},$$ 
+
+e ainda o conjunto dos números naturais sem o zero. 
+
+$$ \N^{*} = \{1, 2, 3, 4, 5, ...\},$$ 
+
+Ainda se discute dentro da matemática se o zero pertence ou não ao conjunto dos números naturais. 
+
+Veja que as operações de adição ($+$) e multiplicação ($\times$) estão bem definidas neste conjunto, no entanto a subtração ($-$) e a divisão ($\div$) não estão. 
+
+
+## Conjunto dos Números Inteiros
+
+Neste conjuntos temos a inserção dos números negativos, sua forma é dada por: 
+
+$$\Z = \{..., -5, -4, -3, -2, -1, 0, 1, 2, 3, 4, 5, ...\},$$ 
+
+Observe que $\N \subset \Z$. E ainda que no conjunto dos números inteiros temos bem definidas as operçaões de soma ($+$) e subtração ($-$). 
+
+## Conjunto dos Números Racionais 
+
+O conjunto dos números racionais ($\Q$) é formado por todos os números que podem ser escrito em forma de fração, ou seja, o conjunto dos números que podem ser obtidos como resultado de alguma divisão, representamos o conjunto da seguinte forma: 
+
+$$ \Q = \displaystyle\left\{ \dfrac{a}{b} | a, b \in \Z ~\text{e} ~ b \neq 0 \right\}$$ 
 
 
 

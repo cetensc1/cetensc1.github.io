@@ -172,3 +172,119 @@ $$ \displaystyle\lim_{x\to a} f(x) = L $$
     <iframe width="720" height="345" src="https://www.youtube.com/embed/bcTNi8QWAPU"></iframe>
     </p>
 
+### Exemplo 3
+
+Seja $f$ uma função tal que $f(x)=3x+2, x \in \R$ se $\dlim_{x\to 1}f(x)=5$, encontre um $\delta$ para que $\varepsilon =0,01$, tal que 
+$$0<|x-1|<\delta \Rightarrow |f(x)-5|< 0,01 $$ 
+
+??? check "Solução"
+    $\Large\text{Temos que}$ 
+
+    $$\Large |f(x)-5|<\varepsilon \Rightarrow |3x+2-5|<\varepsilon$$ 
+
+    $$\Large \Rightarrow |3x-3|<\varepsilon \Rightarrow |3(x-1)|<\varepsilon$$ 
+
+    $$\Large \Rightarrow |3|\cdot |x-1|<\varepsilon \Rightarrow  |x-1|<\dfrac{\varepsilon}{3} \qquad \mbox{(1)}$$ 
+
+    $\Large\text{Como da definição,}$
+
+    $$\Large |x-1|<\delta \qquad \mbox{(2)}$$ 
+
+    $\Large\text{Comparando as expressões (1) e (2), temos}$
+
+    $$ \Large\delta = \dfrac{\varepsilon}{3} = \dfrac{0,01}{3}= 3, 33 \times 10^{-3}.$$
+
+
+### Exemplo 4 
+
+Prove pela definição de limite que $\dlim_{x\to 1} \dfrac{x^3-1}{x-1}=3$ 
+
+
+??? check "Solução"
+    
+    $\Large\text{Aplicando a definição matemática de limite, temos}$
+	
+	$$\Large\dlim_{x\to 1} \dfrac{x^3-1}{x-1}=3 \Leftrightarrow \forall \varepsilon >0; \exists \delta >0 ~| $$  
+    
+    $$\Large ~ 0<|x-1|<\delta \Rightarrow \left| \dfrac{x^3-1}{x-1}-3\right|<\varepsilon $$ 
+	
+	$\Large\text{De,}$
+	
+	$$\Large\left| \dfrac{x^3-1}{x-1}-3\right|<\varepsilon $$ 
+    
+    $$\Large\Leftrightarrow \left|\dfrac{(x-1)(x^2+x+1)}{x-1}-3\right|<\varepsilon$$ 
+	
+	$\Large\text{Simplificando,}$
+	
+	$$\Large\Leftrightarrow |x^2+x+1-3|< \varepsilon$$
+
+	$$\Large\Leftrightarrow | x^2+x-2|<\varepsilon $$ 
+	
+	$\Large\text{Sabendo que para um polinômio}$ 
+	
+	$\Large P(x)=Ax^n+Ax^{n-1}+...+Am$ $\Large\text{pode ser fatorado como}$
+	$\Large P(x)=Ax(x-x_1)(x-x_2)...(x-x_m)$. 
+	
+	$$\Large |(x-1)(x+2)| < \varepsilon $$ 
+    
+    $$\Large\Leftrightarrow |x-1||x+2|<\varepsilon \quad \mbox{(3)} $$
+	
+	$\Large\text{Supor que}$ $\Large\delta \leqslant 1$, $\Large\text{logo}$ 
+
+	$$\Large |x-1|<1 $$ 
+    
+    $$\Large \Leftrightarrow -1<x-1<1 \Rightarrow 0<x<2 $$ 
+
+	$$\Large\Rightarrow 2<x+2<4$$ 
+	
+	$\Large\text{Assim, podemos escrever}$
+	
+	$$\Large|x+2|<4$$ 
+
+	$\Large\text{Multiplicando ambos os membros  por}$ $\Large\delta$ 
+	
+	$$\Large\delta |x+2|<4\delta \quad \mbox{(4)}$$ 
+	
+	$\Large\text{De (1), temos}$
+	
+	$$\Large|x-1|<\delta$$ 
+	
+	$\Large\text{Multiplicando ambos os membros por}$ $\Large|x+2|$, $\Large\text{temos}$
+	
+	$$\Large|x-1||x+2|<\delta |x+2| \quad \mbox{(5)}$$ 
+	
+	$\Large\text{Usando (4), temos}$ 
+	
+	$$\Large|x-1||x+2|<4\delta $$ 
+	
+	$\Large\text{Comparando (6) com (3), temos}$
+	
+	$$\Large 4\delta \leqslant \varepsilon \Rightarrow \delta \leqslant \dfrac{\varepsilon}{4}$$ 
+	
+	$\Large\text{Assim,}$ $\Large\delta = min\left\{1,\dfrac{\varepsilon}{4}\right\}$.
+	
+	$\Large\text{De fato,}$
+	
+	$$\Large |x-1|<\delta \Rightarrow$$ 
+	
+	$\Large\text{Multiplicando ambos os membros por}$ $\Large |x+2|$ 
+	
+	$$\Large |x-1||x+2|<\delta |x+2| $$ 
+	
+	$\Large\mbox{como}$ $\Large\delta |x+2| < 4 \delta$, 
+	
+	$$\Large |x-1||x+2|<4\delta $$ 
+	
+	$$\Large |x-1||x+2|<\varepsilon $$ 
+
+	$$ \Large\Leftrightarrow |(x-1)(x+2)|<\varepsilon $$ 
+	
+	$$ \Large\Leftrightarrow |x^2+x-2|<\varepsilon $$ 
+
+	$$ \Large\Leftrightarrow |x^2+x+1-3|\varepsilon $$ 
+	
+	$$ \Large\Leftrightarrow \left| \dfrac{(x-1)(x^2+x+1)}{x-1}-3\right|<\varepsilon$$ 
+	
+	$$ \Large\Leftrightarrow \left| \dfrac{x^3-1}{x-1}-3\right| < \varepsilon $$ 
+	
+	$\Large\text{Portanto,}$ $\Large\dlim_{x\to 1} \dfrac{x^3-1}{x-1}=3$.

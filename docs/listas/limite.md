@@ -54,7 +54,7 @@ p.combinado:first-letter {
 
     **b)** $\Large f(x)= \left\{\begin{array}{cccc}
     x^2-1, & &\text{se } x\geq 1  &\\
-    1, & &\text{se } x = x & x_0 = x\\ 
+    1, & &\text{se } x = 2 & x_0 = 2\\ 
     1-x, & &\text{se } x < 1 &
     \end{array}\right.$
 
@@ -118,6 +118,7 @@ p.combinado:first-letter {
 
 ??? check "Respostas"
     Em breve.
+
 
 ### **Questão 4 -** Calcule os seguintes limites. Limites **indeterminados** do tipo "infinito/infinito".
 

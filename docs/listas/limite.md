@@ -40,285 +40,189 @@ p.combinado:first-letter {
 }
 </style>
 
-
-<style>
-p.combinado:first-letter { 
-	color: #F5843A; 
-	font-size:xx-large; 
-}
-
-.button {
-  border-radius: 20px;
-  background-color: #009688;
-  border: none;
-  color: #FFFFFF;
-  text-align: center;
-  font-size: 15px;
-  padding: 10px;
-  width: 150px;
-  transition: all 0.5s;
-  cursor: pointer;
-  margin: 5px;
-}
-
-
-.button span {
-  cursor: pointer;
-  display: inline-block;
-  position: relative;
-  transition: 0.5s;
-}
-
-.button span:after {
-  content: '\00bb';
-  position: absolute;
-  opacity: 0;
-  top: 0;
-  right: -20px;
-  transition: 0.5s;
-}
-
-.button:hover span {
-  padding-right: 25px;
-}
-
-.button:hover span:after {
-  opacity: 1;
-  right: 0;
-}	
-
-/** AVISOS **/
-.card {
-  box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
-  transition: 0.3s;
-  border-radius: 50px;
-}
-
-.card:hover {
-  box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2);
-}
-
-.alert {
-  padding: 12px;
-  background-color: #f44336;
-  color: white;
-  border-radius: 50px;
-}
-
-.success {
-  padding: 12px;
-  background-color: #6BBD6E;
-  color: white;
-  border-radius: 50px;
-}
-
-.info {
-  padding: 12px;
-  background-color: #47A8F5;
-  color: white;
-  border-radius: 50px;
-}
-
-.warning {
-  padding: 12px;
-  background-color: #FFAA2C;
-  color: white;
-  border-radius: 50px;
-}
-
-.closebtn {
-  margin-left: 25px;
-  color: white;
-  font-weight: bold;
-  float: right;
-  font-size: 22px;
-  line-height: 25px;
-  cursor: pointer;
-  transition: 0.3s;
-}
-
-.closebtn:hover {
-  color: black;
-}
-
-/** ANOTAÇÕES **/
-
-.atencao {
-  background-color: #ffdddd;
-  border-left: 6px solid #f44336;
-  margin-bottom: 15px;
-  padding: 4px 12px;
-}
-
-.sucesso {
-  background-color: #ddffdd;
-  border-left: 6px solid #4CAF50;
-  margin-bottom: 15px;
-  padding: 4px 12px;
-}
-
-.informacao {
-  background-color: #e7f3fe;
-  border-left: 6px solid #2196F3;
-  margin-bottom: 15px;
-  padding: 4px 12px;
-}
-
-
-.atento {
-  background-color: #ffffcc;
-  border-left: 6px solid #ffeb3b;
-  margin-bottom: 15px;
-  padding: 4px 12px;
-}
-
-
-input[type='checkbox'] { display: none; } .wrap-collabsible { margin: 1.2rem 0; } .lbl-toggle { display: block; font-weight: bold; font-family: monospace; font-size: 1.2rem; text-transform: uppercase; text-align: center; padding: 1rem; color: #DDD; background: #0069ff; cursor: pointer; border-radius: 7px; transition: all 0.25s ease-out; } .lbl-toggle:hover { color: #FFF; } .lbl-toggle::before { content: ' '; display: inline-block; border-top: 5px solid transparent; border-bottom: 5px solid transparent; border-left: 5px solid currentColor; vertical-align: middle; margin-right: .7rem; transform: translateY(-2px); transition: transform .2s ease-out; } .toggle:checked+.lbl-toggle::before { transform: rotate(90deg) translateX(-3px); } .collapsible-content { max-height: 0px; overflow: hidden; transition: max-height .25s ease-in-out; } .toggle:checked + .lbl-toggle + .collapsible-content { max-height: 350px; } .toggle:checked+.lbl-toggle { border-bottom-right-radius: 0; border-bottom-left-radius: 0; } .collapsible-content .content-inner { background: rgba(0, 105, 255, .2); border-bottom: 1px solid rgba(0, 105, 255, .45); border-bottom-left-radius: 7px; border-bottom-right-radius: 7px; padding: .5rem 1rem; } .collapsible-content p { margin-bottom: 0; }
-</style>
-
-
-
-<!-- 
-![Legenda](../imagens/capitulo.png)
---> 
-
-
-
-
-
 ## Lista 1 - Cálculo Diferencial e Integral I 
 
 ### **Questão 1 -** Verifique se as seguintes funções são contínuas em $x_0$. 
 
-**a)** $f(x)= \left\{\begin{array}{cccc}
--3x-2, & &\text{se } x>1  &\\
-2, & &\text{se } x = 1 & x_0 = 1\\ 
-4x+1, & &\text{se } x < 1 &
-\end{array}\right.$
+??? question "Questão"
 
-**b)** $f(x)= \left\{\begin{array}{cccc}
-x^2-1, & &\text{se } x\geq 1  &\\
-1, & &\text{se } x = x & x_0 = x\\ 
-1-x, & &\text{se } x < 1 &
-\end{array}\right.$
+    **a)** $\Large f(x)= \left\{\begin{array}{cccc}
+    -3x-2, & &\text{se } x>1  &\\
+    2, & &\text{se } x = 1 & x_0 = 1\\ 
+    4x+1, & &\text{se } x < 1 &
+    \end{array}\right.$
 
-**c)** $f(x)= \left\{\begin{array}{cccc}
--x^2-x, & &\text{se } x\geq 0  & x_0 = 0\\
--x, & &\text{se } x < 0 &
-\end{array}\right.$
+    **b)** $\Large f(x)= \left\{\begin{array}{cccc}
+    x^2-1, & &\text{se } x\geq 1  &\\
+    1, & &\text{se } x = x & x_0 = x\\ 
+    1-x, & &\text{se } x < 1 &
+    \end{array}\right.$
+
+    **c)** $\Large f(x)= \left\{\begin{array}{cccc}
+    -x^2-x, & &\text{se } x\geq 0  & x_0 = 0\\
+    -x, & &\text{se } x < 0 &
+    \end{array}\right.$
+
+??? check "Respostas"
+    (a) em breve.
+    (b) em breve.
+    (c) em breve
 
 ### **Questão 2 -** Calcule os limites a seguir. 
 
-**a)** $\displaystyle\lim_{x\to -1} -x^5-3x^4+12x^2$ 
+??? question "Questão"
 
-**b)** $\displaystyle\lim_{x\to 4} -x^3 + \displaystyle\frac{x^2}{4} - \displaystyle\frac{x}{2}$ 
+    **a)** $\Large\displaystyle\lim_{x\to -1} -x^5-3x^4+12x^2$ 
 
-**c)** $\displaystyle\lim_{x\to -1} \displaystyle\frac{1+x^2}{1-x}$ 
+    **b)** $\Large\displaystyle\lim_{x\to 4} -x^3 + \displaystyle\frac{x^2}{4} - \displaystyle\frac{x}{2}$ 
 
-**d)** $\displaystyle\lim_{x\to 1} 2^{x} (x^3-4)$ 
+    **c)** $\Large\displaystyle\lim_{x\to -1} \displaystyle\frac{1+x^2}{1-x}$ 
 
-**e)** $\displaystyle\lim_{x\to \displaystyle\frac{\pi}{2}} \displaystyle\frac{\text{sen(x)}}{1+\cos(x)}$ 
+    **d)** $\Large\displaystyle\lim_{x\to 1} 2^{x} (x^3-4)$ 
 
-**f)** $\displaystyle\lim_{x\to -1} \displaystyle\frac{3^{3x+5}}{2^{\cos{(x\pi)}}}$
+    **e)** $\Large\displaystyle\lim_{x\to \displaystyle\frac{\pi}{2}} \displaystyle\frac{\text{sen(x)}}{1+\cos(x)}$ 
 
-**g)** $\displaystyle\lim_{x\to 2} \displaystyle\frac{|x^2-9|}{2+x}$ 
+    **f)** $\Large\displaystyle\lim_{x\to -1} \displaystyle\frac{3^{3x+5}}{2^{\cos{(x\pi)}}}$
 
-**h)** $\displaystyle\lim_{x\to -1} - \displaystyle\frac{2x^2-1}{x+10}$ 
+    **g)** $\Large\displaystyle\lim_{x\to 2} \displaystyle\frac{|x^2-9|}{2+x}$ 
+
+    **h)** $\Large\displaystyle\lim_{x\to -1} - \displaystyle\frac{2x^2-1}{x+10}$ 
+
+??? check "Respostas"
+    Em breve.
 
 ### **Questão 3 -** Calcule os seguintes limites. Limites indeterminados do tipo "zero/zero". 
 
-**a)** $\displaystyle\lim_{x\to 2} \displaystyle\frac{x^2-4}{x^2-2x}$
 
-**b)** $\displaystyle\lim_{x\to 2} \displaystyle\frac{2x^2-8}{3x^2-4x-4}$
+??? question "Questão"
 
-**c)** $\displaystyle\lim_{x\to 1} \displaystyle\frac{x^2-2x+1}{x^2-1}$
+    **a)** $\Large\displaystyle\lim_{x\to 2} \displaystyle\frac{x^2-4}{x^2-2x}$
 
-**d)** $\displaystyle\lim_{x\to \displaystyle\frac{1}{2}} \displaystyle\frac{2x^2+3x-2}{8x^3-1}$
+    **b)** $\Large\displaystyle\lim_{x\to 2} \displaystyle\frac{2x^2-8}{3x^2-4x-4}$
 
-**e)** $\displaystyle\lim_{x\to -2} -\displaystyle\frac{x^2-4}{3x^2+4x-4}$
+    **c)** $\Large\displaystyle\lim_{x\to 1} \displaystyle\frac{x^2-2x+1}{x^2-1}$
 
-**f)** $\displaystyle\lim_{x\to 2} \log_{6}{\left(\displaystyle\frac{3x^3-24}{x-2}\right)}$
+    **d)** $\Large\displaystyle\lim_{x\to \displaystyle\frac{1}{2}} \displaystyle\frac{2x^2+3x-2}{8x^3-1}$
 
-**g)** $\displaystyle\lim_{x\to 1} \displaystyle\frac{\sqrt{x-1}}{x-1}$
+    **e)** $\Large\displaystyle\lim_{x\to -2} -\displaystyle\frac{x^2-4}{3x^2+4x-4}$
 
-**h)** $\displaystyle\lim_{x\to 0} \displaystyle\frac{\sqrt{x+1} - \sqrt{1-x}}{3x}$
+    **f)** $\Large\displaystyle\lim_{x\to 2} \log_{6}{\left(\displaystyle\frac{3x^3-24}{x-2}\right)}$
 
-**i)** $\displaystyle\lim_{x\to -1} \displaystyle\frac{1-\sqrt{x^2}}{2x+2}$
+    **g)** $\Large\displaystyle\lim_{x\to 1} \displaystyle\frac{\sqrt{x-1}}{x-1}$
 
-**j)** $\displaystyle\lim_{x\to 1} \displaystyle\frac{\sqrt[3]{x^2}-2\sqrt[3]{x}+1}{(x-1)^2}$
+    **h)** $\Large\displaystyle\lim_{x\to 0} \displaystyle\frac{\sqrt{x+1} - \sqrt{1-x}}{3x}$
+
+    **i)** $\Large\displaystyle\lim_{x\to -1} \displaystyle\frac{1-\sqrt{x^2}}{2x+2}$
+
+    **j)** $\Large\displaystyle\lim_{x\to 1} \displaystyle\frac{\sqrt[3]{x^2}-2\sqrt[3]{x}+1}{(x-1)^2}$
+
+??? check "Respostas"
+    Em breve.
 
 ### **Questão 4 -** Calcule os seguintes limites. Limites **indeterminados** do tipo "infinito/infinito".
 
-**a)** $\displaystyle\lim_{x\to +\infty} \displaystyle\frac{2x^2-4x-25}{18x^3-9x^2}$
+??? question "Questão"
 
-**b)** $\displaystyle\lim_{x\to +\infty} \text{sen}\left(\displaystyle\frac{2+x-\pi x^2}{12x-4x^2}\right)$
+    **a)** $\Large\displaystyle\lim_{x\to +\infty} \displaystyle\frac{2x^2-4x-25}{18x^3-9x^2}$
 
-**c)** $\displaystyle\lim_{x\to +\infty} -\displaystyle\frac{2x^2-3x-4}{x^4+1}$
+    **b)** $\Large\displaystyle\lim_{x\to +\infty} \text{sen}\left(\displaystyle\frac{2+x-\pi x^2}{12x-4x^2}\right)$
 
-**d)** $\displaystyle\lim_{x\to +\infty} \left[ \log_{\frac{1}{2}}{(2x^3+x)} - \log_{\frac{1}{2}}{(2x+x^3)}\right]$
+    **c)** $\Large\displaystyle\lim_{x\to +\infty} -\displaystyle\frac{2x^2-3x-4}{x^4+1}$
 
-**e)** $\displaystyle\lim_{x\to +\infty} \displaystyle\frac{3x^2-5x-9x^2}{5+9x^3-9x^2}$
+    **d)** $\Large\displaystyle\lim_{x\to +\infty} \left[ \log_{\frac{1}{2}}{(2x^3+x)} - \log_{\frac{1}{2}}{(2x+x^3)}\right]$
+
+    **e)** $\Large\displaystyle\lim_{x\to +\infty} \displaystyle\frac{3x^2-5x-9x^2}{5+9x^3-9x^2}$
+
+??? check "Respostas"
+    Em breve.
+
 
 ### **Questão 5 -** Calcule os seguintes limites. **Limites fundamentais**.
 
-**a)** $\displaystyle\lim_{x\to -\infty} \left( 1 + \displaystyle\frac{2}{x}\right)^{x}$ 
+??? question "Questão"
 
-**b)** $\displaystyle\lim_{x\to -\infty} \left( 1 - \displaystyle\frac{3}{x}\right)^{x}$ 
+    **a)** $\Large\displaystyle\lim_{x\to -\infty} \left( 1 + \displaystyle\frac{2}{x}\right)^{x}$ 
 
-**c)** $\displaystyle\lim_{x\to +\infty} \left( 1 + \displaystyle\frac{1}{x}\right)^{3x}$ 
+    **b)** $\Large\displaystyle\lim_{x\to -\infty} \left( 1 - \displaystyle\frac{3}{x}\right)^{x}$ 
 
-**d)** $\displaystyle\lim_{x\to +\infty} \left(\displaystyle\frac{x+a}{x-a}\right)^{x}$ 
+    **c)** $\Large\displaystyle\lim_{x\to +\infty} \left( 1 + \displaystyle\frac{1}{x}\right)^{3x}$ 
 
-**e)** $\displaystyle\lim_{x\to 0} \left( \displaystyle\frac{3^{h+x} - 3^{h}}{x}\right)^{x}$ 
+    **d)** $\Large\displaystyle\lim_{x\to +\infty} \left(\displaystyle\frac{x+a}{x-a}\right)^{x}$ 
 
-**f)** $\displaystyle\lim_{x\to -\infty} \left( 1 + \displaystyle\frac{2}{x}\right)^{x}$ 
+    **e)** $\Large\displaystyle\lim_{x\to 0} \left( \displaystyle\frac{3^{h+x} - 3^{h}}{x}\right)^{x}$ 
 
-**g)** $\displaystyle\lim_{x\to 0}  \displaystyle\frac{\text{sen}(7x)}{x}$ 
+    **f)** $\Large\displaystyle\lim_{x\to -\infty} \left( 1 + \displaystyle\frac{2}{x}\right)^{x}$ 
 
-**h)** $\displaystyle\lim_{x\to 0}  \displaystyle\frac{\text{tg}(3x)}{2x}$ 
+    **g)** $\displaystyle\lim_{x\to 0}  \displaystyle\frac{\text{sen}(7x)}{x}$ 
 
-**i)** $\displaystyle\lim_{x\to 0}  \displaystyle\frac{1-\cos(x)}{x^2}$ 
+    **h)** $\Large\displaystyle\lim_{x\to 0}  \displaystyle\frac{\text{tg}(3x)}{2x}$ 
 
-**i)** $\displaystyle\lim_{x\to 0}  \displaystyle\frac{1-\sec(x)}{x}$ 
+    **i)** $\Large\displaystyle\lim_{x\to 0}  \displaystyle\frac{1-\cos(x)}{x^2}$ 
+
+    **i)** $\Large\displaystyle\lim_{x\to 0}  \displaystyle\frac{1-\sec(x)}{x}$ 
+
+??? check "Respostas"
+    Em breve.
 
 ### **Exercícios livro de Diva Marília Flemming - Cálculo A**
 
  - Página 74. 
 
-**9.** Mostrar que existe o limite de $f(x) = 4x-5$ em $x=3$ e que é igual a $7$. 
+??? question "Questão 09 - Pág. 74"
+    **9.** Mostrar que existe o limite de $\Large f(x) = 4x-5$ em $\Large x=3$ e que é igual a $\Large 7$. 
 
-**10.** Mostrar que $\displaystyle\lim_{x\to 3} x^2 = 9.$ 
+??? check "Respostas"
+    Em breve.
+
+??? question "Questão 10 - pág. 74"
+    **10.** Mostrar que $\Large\displaystyle\lim_{x\to 3} x^2 = 9.$ 
+
+??? check "Respostas"
+    Em breve.
 
 !!! note "Observe que:"
     Nos exercícios 11 a 15 é dado $\displaystyle\lim_{x\to a} f(x)=L$. Determinar um número $\delta$ para o $\epsilon$ dado tal que $|f(x)-L| < \epsilon$ sempre que $0< |x-a| < \delta$. Dar exemplos de dois outros números positivos para $\delta$, que também satisfazem a implicação dada.
 
-**11.** $\displaystyle\lim_{x\to 2} (2x+4) = 8, \quad \epsilon = 0,01$ 
+??? question "Questão 11 - pág. 74"
 
-**12.** $\displaystyle\lim_{x\to -1} (-3x+7) = 10, \quad \epsilon = 0,5$ 
+    **11.** $\Large\displaystyle\lim_{x\to 2} (2x+4) = 8, \quad \epsilon = 0,01$ 
 
-**13.** $\displaystyle\lim_{x\to -2} \displaystyle\frac{x^2-4}{x+2} = -4, \quad \epsilon = 0,1$ 
+??? check "Respostas"
+    Em breve.
 
-**14.** $\displaystyle\lim_{x\to 5} \displaystyle\frac{1}{2-x} = -\displaystyle\frac{1}{3}, \quad \epsilon = 0,25$
+??? question "Questão 12 - pág. 74"
 
-**15.** $\displaystyle\lim_{x\to 1} \displaystyle\frac{x^2-1}{x-1} = 2, \quad \epsilon = 0,75$ 
+    **12.** $Large\displaystyle\lim_{x\to -1} (-3x+7) = 10, \quad \epsilon = 0,5$ 
+
+??? question "Questão 13 - pág. 74"
+
+    **13.** $\Large\displaystyle\lim_{x\to -2} \displaystyle\frac{x^2-4}{x+2} = -4, \quad \epsilon = 0,1$ 
+
+??? question "Questão 14 - pág. 74"
+
+    **14.** $\Large\displaystyle\lim_{x\to 5} \displaystyle\frac{1}{2-x} = -\displaystyle\frac{1}{3}, \quad \epsilon = 0,25$
+
+??? question "Questão 15 - pág. 74"
+
+    **15.** $\Large\displaystyle\lim_{x\to 1} \displaystyle\frac{x^2-1}{x-1} = 2, \quad \epsilon = 0,75$ 
 
 - Página 79.
 
-**3.** Seja $F(x) = |x-4|$. Calcule os limites indicados se existirem: 
+    **3.** Seja $F(x) = |x-4|$. Calcule os limites indicados se existirem: 
 
-**a)** $\displaystyle\lim_{x\to 4^{+}} F(x)$ 
+    **a)** $\displaystyle\lim_{x\to 4^{+}} F(x)$ 
 
-**b)** $\displaystyle\lim_{x\to 4^{-}} F(x)$
+    **b)** $\displaystyle\lim_{x\to 4^{-}} F(x)$
 
-**c)** $\displaystyle\lim_{x\to 4} F(x)$
+    **c)** $\displaystyle\lim_{x\to 4} F(x)$
 
-**4.** Seja $f(x) = 2 + |5x-1|$. Calcule se existir. 
+    **4.** Seja $f(x) = 2 + |5x-1|$. Calcule se existir. 
 
-**a)** $\displaystyle\lim_{x\to \displaystyle\frac{1}{5}^{+}} f(x)$ 
+    **a)** $\displaystyle\lim_{x\to \displaystyle\frac{1}{5}^{+}} f(x)$ 
 
-**b)** $\displaystyle\lim_{x\to \displaystyle\frac{1}{5}^{-}} f(x)$
+    **b)** $\displaystyle\lim_{x\to \displaystyle\frac{1}{5}^{-}} f(x)$
 
-**c)** $\displaystyle\lim_{x\to \displaystyle\frac{1}{5}} f(x)$
+    **c)** $\displaystyle\lim_{x\to \displaystyle\frac{1}{5}} f(x)$
 
 Esboce o gráfico de $f(x)$. 
 

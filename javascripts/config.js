@@ -19,6 +19,7 @@ window.MathJax = {
         C: "\\mathbb{C}",
         H: "\\mathbb{H}",
         P: "\\mathbb{P}",
+        sen:"\\mbox{sen}",
       },
       TagSide: "right",
       TagIndent: ".8em",

@@ -23,7 +23,7 @@
 
 ## Definição 
 
-Escrevemos $\dlim_{x\to a} f(x)=+\infty$ se $\forall \varepsilon  > 0 , \exists \delta >0 $ tal que $|x-a|<\delta \Rightarrow f(x)>\varepsilon$. 
+Escrevemos $\dlim_{x\to a} f(x)=+\infty$ se $\forall \varepsilon  > 0 , \exists \delta >0$ tal que $|x-a|<\delta \Rightarrow f(x)>\varepsilon$. 
 
 
 ## Exemplo 1 
@@ -53,24 +53,24 @@ Mostre que $\dlim_{x\to 0} \dfrac{1}{x^2}=+\infty$.
 Escrevemos $\dlim_{x\to a} f(x)=-\infty$ se $\forall M < 0 \exists \delta > 0$ tal que $ 0<|x-a|<\delta \Rightarrow f(x)< M $. 
 
 
-## Propriedades de Limites Infinitos
+## Propriedades
 
 Se $c \in \R^{*}$, se $\dlim_{x\to a} f(x)=0$ e $\dlim_{x\to a} g(x)=c$. Temos 
 
 
-1. Se $c>0$ e se $f(x) \to 0$ por valores positivos, então 
+1.Se $c>0$ e se $f(x) \to 0$ por valores positivos, então 
 
 $$\dlim_{x\to a} \dfrac{ g(x)}{f(x)}=+\infty$$ 
 
-2. Se $c>0$ e se $f(x)\to 0$ por valores negativos de $f(x)$, então 
+2.Se $c>0$ e se $f(x)\to 0$ por valores negativos de $f(x)$, então 
 
 $$\dlim_{x\to a} \dfrac{g(x)}{f(x)} = -\infty$$ 
 
-3. Se $c<0$ e $f(x)\to 0 $ por valores positivos, então 
+3.Se $c<0$ e $f(x)\to 0$ por valores positivos, então 
 
 $$\dlim_{x\to a} \dfrac{g(x)}{f(x)}=-\infty$$ 
 
-4. Se $c<0$ e $f(x)\to 0$ por valores negativos, então 
+4.Se $c<0$ e $f(x)\to 0$ por valores negativos, então 
 
 $$\dlim_{x\to a} \dfrac{g(x)}{f(x)}=+\infty$$ 	
 
@@ -82,9 +82,9 @@ Determine $\dlim_{x\to 0} \dfrac{1}{x^2}$.
 
 
 ??? check "Solução"
-    Se $g(x)=1$ e $f(x)=x^2$. Note que $\dlim_{x\to 0}g(x)=1$ e $\dlim_{x\to 0} x^2=0$. 
+    $\Large\text{Se}$ $\Large g(x)=1$ e $\Large f(x)=x^2$. $\Large\text{Note que}$ $\Large\dlim_{x\to 0}g(x)=1$ $\Large\text{e}$ $\Large\dlim_{x\to 0} x^2=0$. 
 	
-    Além disso, observe que $\forall x \in \R $, temos que $x^2>0$
+    $\Large\text{Além disso, observe que}$ $\Large \forall x \in \R$, $\Large\text{temos que}$ $\Large x^2>0$
 
     $$\dlim_{x\to 0} \dfrac{g(x)}{f(x)}=+\infty$$ 
 
@@ -93,18 +93,21 @@ Determine $\dlim_{x\to 0} \dfrac{1}{x^2}$.
 Determine $\dlim_{x\to 1^{-}} \dfrac{x-2}{x^2-1}$.  
 
 ??? check "Solução"
-    Sejam, $g9x)=x-2$ e $f(x)=x^2-1$. Note que 
+    $\Large\text{Sejam,} $\Large g(x)=x-2$ $\Large\text{e}$ $\Large f(x)=x^2-1$. $\Large\text{Note que}$
     
-    $$ \dlim_{x\to 1^{-}} x-1=-1 ~\mbox{e}~\dlim_{x\to 1^{-}} x^2-1=0$$ 
+    $$\Large\dlim_{x\to 1^{-}} x-1=-1 ~\mbox{e}~\dlim_{x\to 1^{-}} x^2-1=0$$ 
 	
-    Fazemos o estudo do sinal da função $f(x)=x^2-1$:
+    $\Large\text{Fazemos o estudo do sinal da função}$ $\Large f(x)=x^2-1$:
 
+    <center>
+    <p><small> Estudo do sinal de f(x). </small></p><br>
+    <img src="../imagens/estudo_sinal.png" style="width: 50%; height: auto;"/>
+    </small>
+    </center>
 
-
-
-
-
-
+    $\Large\text{Logo,}$ $\Large f(x)\to 0$ $\Large\text{por valores negativos de}$ $\Large f(x)$, $\Large\text{assim}$
+    
+    $$\Large\dlim_{x\to 1^{-}} \dfrac{x-2}{x^2-1} = +\infty$$ 
 
 
 ??? check "Limite infinito 1"

@@ -214,7 +214,7 @@ input[type='checkbox'] { display: none; } .wrap-collabsible { margin: 1.2rem 0; 
 
 (b) $\dlim_{x \to 3} (x^3+2)(x^2-5x)$
 
-(c) $\dlim_{x \to -1} \dfrac{x-2}{x^2+4x-3}$
+\(c) $\dlim_{x \to -1} \dfrac{x-2}{x^2+4x-3}$
 
 (d) $\dlim_{x \to 1} \left(\dfrac{x^4+x^2-6}{x^4+2x+3}\right)^2$
 
@@ -229,12 +229,11 @@ input[type='checkbox'] { display: none; } .wrap-collabsible { margin: 1.2rem 0; 
 
 ### **Questão 4 -** Prove que o $\dlim_{x \to 0}\dfrac{|x|}{x}$ não existe.
 
-
-
 ### **Questão 5 -** Seja 
 $f(x)= \left\{\begin{array}{rcl}
 \sqrt{x-4} &,& \mbox{ se } x>4 \\
 8-2x &,& \mbox{ se } x \leq 4\end{array}\right.$ 
+
 e determine, se possível, o $\dlim_{x \to 4} f(x)$.
 
 ??? check "Respostas"
@@ -245,11 +244,14 @@ e determine, se possível, o $\dlim_{x \to 4} f(x)$.
 (a) $\dlim_{t \to -4} \dfrac{|t+4|}{t+4}$
 
 (b) $f(x) =
-\left\{\begin{array}{rcl}
-\sqrt{x^2-9}&,& \mbox{ se } x \leq -3; \\
-\sqrt{9-x^2}&,& \mbox{ se } -3 < x < 3; \\
-\sqrt{x^2+6x+9}&,& \mbox{ se } x \geq 3.
-\end{array}\right. \dlim_{x \to -3} f(x)$ e $\dlim_{x \to 3} f(x)$.
+\left\{\begin{array}{rl}
+\sqrt{x^2-9},&  \mbox{ se } x \leq -3; \\
+\sqrt{9-x^2},&  \mbox{ se } -3 < x < 3; \\
+\sqrt{x^2+6x+9},&  \mbox{ se } x \geq 3.
+\end{array}\right.$
+
+
+$\dlim_{x \to -3} f(x)$ e $\dlim_{x \to 3} f(x)$.
 
 ??? check "Respostas"
     (a) $\nexists$;

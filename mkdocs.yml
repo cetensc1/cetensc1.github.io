@@ -155,8 +155,11 @@ nav:
     - Laterais: limite/laterais.md
     - Infinitos: limite/infinitos.md
     - No infinito: limite/no-infinito.md
+    - Assíntotas: limite/assintotas.md
     - Continuidade: limite/continuidade.md
+    - Teo. do Confronto: limite/teo-confronto.md
     - Fundamentais: limite/fundamentais.md
+    - Exercícios: limite/exercicios.md
     - Licença: limite/creative-commons.md 
   - Derivada:
     - Definição: derivada/definicao.md
@@ -173,6 +176,7 @@ nav:
   - Listas:
     - Limite: listas/limite.md
     - Limite extra: listas/limite-extra.md
+    - Limite extra 2: listas/limite-extra-2.md
     - Derivada: listas/derivada.md
     - Aplicações: listas/aplicacao.md
     - Integral: listas/integral.md
